@@ -1,0 +1,30 @@
+.header {
+  background: var(--scheme-v2);
+  border-bottom: 1px solid var(--scheme-v4);
+  padding: 0 20px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 20px 0;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+
+    img {
+      height: 15px;
+      margin: 0 10px 0 0;
+      width: 15px;
+    }
+
+    button {
+      border: none;
+      margin: 0 5px 0 0;
+      padding: 0;
+    }
+  }
+}

@@ -39,8 +39,12 @@ h5 {
 }
 
 a {
-  color: inherit;
+  color: var(--scheme-v1);
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 b {
@@ -79,10 +83,13 @@ button {
   background: none;
   border: none;
   box-shadow: none;
-
   font: inherit;
-
   margin: 0;
   outline: none;
   padding: 0;
+  cursor: pointer;
+
+  border: 2px solid var(--scheme-v1);
+  color: var(--scheme-v1);
+  padding: 10px 40px;
 }

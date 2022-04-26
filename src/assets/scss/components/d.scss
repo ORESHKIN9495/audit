@@ -1,15 +1,19 @@
 .d {
   background: var(--scheme-v5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
 
   &__items {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 1400px;
 
     p {
       color: var(--scheme-v3);
@@ -21,13 +25,14 @@
       margin: calc(var(--scheme-gap) * 2) 0;
     }
     span {
-      display: flex;
       border: 2px solid var(--scheme-v3);
+      display: flex;
+      margin: 0 0 calc(var(--scheme-gap) * 2) 0;
     }
 
     button {
+      padding: 10px 75px;
       color: var(--scheme-v3);
-      padding: 10px 40px;
     }
     button:first-child {
       border-right: 2px solid var(--scheme-v3);
@@ -39,10 +44,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
   }
   &__item {
-    margin: calc(var(--scheme-gap) * 2);
+    margin: var(--scheme-gap);
     background: var(--scheme-v1);
     box-shadow: -10px 10px 15px var(--scheme-v6);
 
@@ -61,14 +65,14 @@
       flex-direction: column;
       justify-content: center;
       max-width: 200px;
-    }
 
-    a::before {
-      content: "\0027F6 ";
-      position: absolute;
-      margin: 0 0 0 130px;
-      font-size: 40px;
-      color: var(--scheme-v3);
+      &::before {
+        content: "\0027F6 ";
+        position: absolute;
+        margin: 0 0 5px 150px;
+        font-size: 40px;
+        color: var(--scheme-v3);
+      }
     }
 
     ul {
@@ -81,14 +85,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-    }
 
-    li::before {
-      content: "\0030FB";
-      margin: 0 0 0 -30px;
-      font-size: 30px;
-      position: absolute;
-      color: var(--scheme-v3);
+      &::before {
+        content: "\0030FB";
+        margin: 0 0 0 -30px;
+        font-size: 30px;
+        position: absolute;
+        color: var(--scheme-v3);
+      }
     }
   }
 
@@ -96,7 +100,5 @@
     border: 2px solid var(--scheme-v3);
     color: var(--scheme-v3);
     margin: calc(var(--scheme-gap) * 3);
-    max-width: 200px;
-    padding: 10px 40px;
   }
 }

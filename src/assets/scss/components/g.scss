@@ -1,27 +1,26 @@
 .g {
   background: var(--scheme-v2);
-  &__items {
+  color: var(--scheme-v1);
+  padding: 20px;
+
+  &__wrapper {
     margin: 0 auto;
     max-width: 1400px;
+    flex-wrap: wrap;
   }
 
   &__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 80px 0 200px 0;
-    padding: 20px;
-    flex-wrap: wrap;
-    h2 {
-      color: var(--scheme-v1);
-    }
-    h3 {
-      color: var(--scheme-v1);
-    }
+    margin: calc(var(--scheme-gap) * 6) 0;
   }
+
   &__info {
+    width: 100%;
     p {
       color: var(--scheme-v4);
+      margin: 0 0 calc(var(--scheme-gap) * 2) 0;
     }
 
     span {
@@ -32,50 +31,56 @@
     }
 
     hr {
-      border: none;
       background: var(--scheme-v4);
       height: 1.3px;
     }
   }
 
-  &__sendform {
+  &__form {
     border: 2px solid var(--scheme-v3);
-    padding: 390px 280px;
+    padding: 390px 290px;
     position: relative;
   }
 
-  &__form {
+  form {
     background: var(--scheme-v1);
     display: flex;
     flex-direction: column;
     left: -40px;
     position: absolute;
     top: 30px;
-    padding: 40px;
+    padding: 60px;
+    width: 580px;
 
     h2 {
       font-size: 30px;
       color: black;
     }
+
     p {
       color: var(--scheme-v4);
+      margin: var(--scheme-gap) 0;
     }
 
     input {
       margin: 0 0 20px 0;
       background: var(--scheme-v5);
-      padding: 20px 30px;
+      padding: 10px 30px;
     }
+
     textarea {
-      resize: none;
       border: none;
       background: var(--scheme-v5);
-      padding: 20px 30px;
       font-size: 16px;
       margin: 0 0 20px 0;
+      outline: none;
+      padding: 20px 30px;
+      resize: none;
     }
+
     span {
       color: var(--scheme-v4);
+
       a {
         color: black;
         text-decoration: underline;
@@ -85,36 +90,22 @@
     button {
       border: 2px solid var(--scheme-v3);
       color: var(--scheme-v3);
-      padding: 10px 40px;
       margin: 20px 0;
       max-width: 200px;
     }
   }
 
-  &__nav {
+  nav {
     align-items: center;
     display: flex;
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 20px 0;
-    color: var(--scheme-v1);
-    flex-wrap: wrap;
 
     figure {
       margin: 0 auto 0 0;
-      padding: 40px;
-      white-space: nowrap;
+      padding: 40px 0;
     }
 
     a {
       padding: 0 60px 0 0;
-      white-space: nowrap;
-    }
-
-    button {
-      border: 2px solid var(--scheme-v1);
-      color: var(--scheme-v1);
-      padding: 10px 40px;
     }
   }
 }
