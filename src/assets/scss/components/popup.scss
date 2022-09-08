@@ -1,0 +1,46 @@
+.city {
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+  &__wrapper {
+    display: flex;
+    margin: 65px auto;
+    max-width: var(--scheme-max-width-wrapper);
+  }
+
+  &__item {
+    background: var(--scheme-v1);
+    border-radius: 5px;
+  }
+
+  &__items {
+    align-items: center;
+    border-bottom: 1px solid var(--scheme-v5);
+    color: var(--scheme-v4);
+    display: flex;
+    padding: 20px 40px;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: var(--scheme-v1);
+      background: var(--scheme-v3);
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    &::before {
+      color: var(--scheme-v4);
+      content: "\0030FB";
+      margin: 0 0 0 -30px;
+      font-size: 40px;
+      position: absolute;
+    }
+  }
+}

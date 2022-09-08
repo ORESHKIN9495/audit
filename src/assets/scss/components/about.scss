@@ -1,0 +1,34 @@
+.about {
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: var(--scheme-gap) auto;
+    max-width: var(--scheme-max-width-wrapper);
+  }
+
+  &__item {
+    border: 2px solid var(--scheme-v3);
+    margin-right: calc(var(--scheme-gap) * 4);
+    max-width: 550px;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  figure {
+    background: var(--scheme-v2);
+    height: 380px;
+    width: 648px;
+  }
+}
+
+@media only screen and(max-width:682px) {
+  .about {
+    margin-right: 4rem;
+
+    figure {
+      width: calc(648px + 100vw - 682px);
+    }
+  }
+}

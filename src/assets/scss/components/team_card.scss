@@ -1,0 +1,34 @@
+.team_card {
+  background: var(--scheme-v1);
+  box-shadow: -10px 10px 15px var(--scheme-v6);
+  text-align: left;
+
+  figure {
+    background: var(--scheme-v2);
+    height: 250px;
+    width: 100%;
+  }
+
+  h3 {
+    margin: var(--scheme-gap) var(--scheme-gap) 0;
+  }
+
+  p {
+    color: var(--scheme-v4);
+    margin: 0 var(--scheme-gap);
+  }
+
+  article {
+    align-items: center;
+    display: flex;
+
+    a {
+      color: var(--scheme-v3);
+      margin: var(--scheme-gap);
+    }
+
+    svg {
+      fill: var(--scheme-v3);
+    }
+  }
+}

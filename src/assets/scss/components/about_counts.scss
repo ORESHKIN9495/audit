@@ -1,0 +1,31 @@
+.count {
+  padding: var(--scheme-padding-container);
+
+  p {
+    color: var(--scheme-v4);
+    margin: 2rem 0;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 4rem;
+
+    span {
+      display: block;
+      margin: 1rem 0;
+
+      p {
+        margin: 0;
+      }
+
+      p:first-child {
+        color: black;
+        font-size: 30px;
+      }
+    }
+  }
+}

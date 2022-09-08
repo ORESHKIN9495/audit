@@ -7,3 +7,9 @@
  * Custom
  */
 //= components/app.js
+//= components/hero_counts.js
+//= components/scroll_counts.js
+//= components/button_consult.js
+//= components/popup.js
+//= components/form.js
+//= components/slider.js

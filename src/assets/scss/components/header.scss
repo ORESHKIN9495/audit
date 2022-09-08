@@ -1,14 +1,13 @@
 .header {
   background: var(--scheme-v2);
   border-bottom: 1px solid var(--scheme-v4);
-  padding: 0 20px;
+  padding: var(--scheme-padding-container);
 
-  &__items {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1400px;
-    padding: 20px 0;
+    max-width: var(--scheme-max-width-wrapper);
   }
 
   &__item {
@@ -16,14 +15,13 @@
     display: flex;
 
     img {
-      height: 15px;
-      margin: 0 10px 0 0;
-      width: 15px;
+      margin-right: 0.5rem;
+      width: 1.5rem;
     }
 
     button {
       border: none;
-      margin: 0 5px 0 0;
+      background: none;
       padding: 0;
     }
   }

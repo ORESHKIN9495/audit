@@ -1,0 +1,24 @@
+.new {
+  max-width: 650px;
+  text-align: left;
+
+  p {
+    color: var(--scheme-v4);
+    margin: 0;
+  }
+
+  span {
+    align-items: center;
+    display: flex;
+    margin-bottom: var(--scheme-gap);
+
+    a {
+      color: var(--scheme-v3);
+      margin-right: var(--scheme-gap);
+    }
+
+    svg {
+      fill: var(--scheme-v3);
+    }
+  }
+}

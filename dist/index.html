@@ -19,26 +19,43 @@
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
+
 <body>
+
+
 
   <!-- header -->
   <header>
-    <section class="header">
-    
-    	<div class="header__items">
+    <section id="head" class="header">
+    	<div class="header__wrapper">
     
     		<div class="header__item">
     			<img src="../assets/img/icon/map.svg" alt="/">
-    			<button>Выберите город</button>
+    			<button id="popup"></button>
+    
+    
+    
+    			<section id="city-popup" class="city">
+    			
+    			    <div id="city-popup1" class="city__wrapper">
+    			        <div class="city__item">
+    			            <a class="city__items">Волгоград</a>
+    			            <a class="city__items">Волжский</a>
+    			            <a class="city__items">Москва</a>
+    			            <a class="city__items">Санкт-перебург</a>
+    			        </div>
+    			    </div>
+    			
+    			</section>
+    
     		</div>
     
     		<div class="header__item">
     			<img src="../assets/img/icon/phone.svg" alt="/">
-    			<a href="/">8 800 999 99 99</a>
+    			<a href="tel: 8 800 999 99 99">8 800 999 99 99</a>
     		</div>
     
     	</div>
-    
     </section>
   </header>
 
@@ -48,19 +65,28 @@
     <section class="hero">
     
         <div class="hero__wrapper">
-            <nav>
-                <figure>МФЦ АУДИТ</figure>
+            <section class="nav">
+                <figure class="nav__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 362.4" fill="#fff">
+                        <path
+                            d="M240.4 362.4c-100 0-181.4-81.3-181.4-181.2C59 81.3 140.4 0 240.4 0s181.4 81.3 181.4 181.2-81.4 181.2-181.4 181.2zm0-350.4C147 12 71 87.9 71 181.2c0 93.3 76 169.2 169.4 169.2s169.4-75.9 169.4-169.2S333.8 12 240.4 12z" />
+                        <path d="M0 256.3s77-56 240-56 240 56 240 56-78-75-240-75-240 75-240 75z" />
+                        <path
+                            d="M146 262.3h69v-9h-28c-2.9-2.9 0-8.1 0-8.1l46-123.9 49.8 124s3.2 5 .2 8h-25v9h76v-9h-8s-5.5.1-9-2c-2.6-1.7-4.7-4.2-6-7l-65-163h-13l-64 163s-2.3 4.6-5 7c-2.3 2.1-10 2-10 2h-8v9z" />
+                    </svg>
+                    <p>МФЦ АУДИТ</p>
+                </figure>
+            
+                <a id="scroll-a">О компании</a>
+                <a>Наши услуги</a>
+                <a>Преимущества</a>
+                <a>Документы</a>
+                <a>Контакты</a>
+            
+                <button class="button_consult">Консультация</button>
+            </section>
     
-                <a href="/">О компании</a>
-                <a ref="/">Наши услуги</a>
-                <a ref="/">Преимущества</a>
-                <a ref="/">Документы</a>
-                <a ref="/">Контакты</a>
-    
-                <button>Консультация</button>
-            </nav>
-    
-            <article class="hero__item">
+            <article class="hero__title">
                 <p>Предприятие</p>
     
                 <h1>Юридическое сопровождение <br />с гарантией результата</h1>
@@ -68,39 +94,38 @@
                 <p>Получите детальный анализ вашей ситуации <br />и план по ее разрешению совершенно бесплатно.
                 </p>
     
-                <span class="hero__btn">
-                    <button>Консультация</button>
+                <span>
+                    <button class="button_consult">Консультация</button>
+    
                     <button>О компании</button>
                 </span>
     
             </article>
     
-            <article class="hero__counts">
-    
-                <span class="hero__count">
-                    <p>80</p>
+            <section class="counts_hero">
+                <article>
+                    <p id="count-a">0</p>
                     <p>ежедневных косультаций</p>
-                </span>
-    
-                <span class="hero__count">
-                    <p>16</p>
+                </article>
+            
+                <article>
+                    <p id="count-b">0</p>
                     <p>обслуживаемых городов</p>
-                </span>
-    
-                <span class="hero__count">
-                    <p>99,9%</p>
+                </article>
+            
+                <article>
+                    <p id="count-c">0%</p>
                     <p>выиграных дел</p>
-                </span>
-    
-            </article>
+                </article>
+            </section>
         </div>
     
     </section>
-    <section class="c">
+    <section class="offer">
     
-        <div class="c__wrapper">
+        <div class="offer__wrapper">
     
-            <article class="c__item">
+            <article class="offer__title">
     
                 <p>Категория услуги</p>
     
@@ -118,353 +143,476 @@
                     порядок учета налогоплательщиков.
                 </p>
     
-                <button>Консультация</button>
+                <button class="button_consult">Консультация</button>
     
             </article>
     
-            <div class="c__item">
     
+            <div class="offer__item">
                 <figure></figure>
-    
             </div>
     
         </div>
     
     </section>
-    <section class="d">
-        <div class="d__wrapper">
+    <section class="services">
+        <p>Чем мы занимаемся</p>
     
-            <article class="d__items">
-                <p>Чем мы занимаемся</p>
-                <h2>Спектр наших услуг</h2>
-                <span>
-                    <button>Услуги для граждан</button>
-                    <button>Услуги для бизнеса</button>
-                </span>
-            </article>
+        <h2>Спектр наших услуг</h2>
     
-            <article class="d__grid">
+        <div class="services__wrapper">
+            <div class=" services__buttons">
+                <button>Услуги для граждан</button>
     
-                <div class="d__item">
+                <button>Услуги для бизнеса</button>
+            </div>
+    
+            <section class="services__items">
+                <article class="card">
                     <figure></figure>
+                
                     <h3>Заголовок услуги</h3>
+                
                     <ul>
-    
                         <li>Краткое описание услуги</li>
                         <li>Краткое описание услуги</li>
                         <li>Краткое описание услуги</li>
                         <li>Краткое описание услуги</li>
-    
                     </ul>
-    
-                    <a href="/">Узнать больше </a>
-                </div>
-    
-                <div class="d__item">
-                    <figure></figure>
-                    <h3>Заголовок услуги</h3>
-                    <ul>
-    
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-    
-                    </ul>
-    
-                    <a href="/">Узнать больше </a>
-                </div>
-    
-                <div class="d__item">
-                    <figure></figure>
-                    <h3>Заголовок услуги</h3>
-                    <ul>
-    
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-    
-                    </ul>
-    
-                    <a href="/">Узнать больше </a>
-                </div>
-    
-                <div class="d__item">
-                    <figure></figure>
-                    <h3>Заголовок услуги</h3>
-                    <ul>
-    
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-    
-                    </ul>
-    
-                    <a href="/">Узнать больше </a>
-                </div>
-    
-                <div class="d__item">
-                    <figure></figure>
-                    <h3>Заголовок услуги</h3>
-                    <ul>
-    
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-    
-                    </ul>
-    
-                    <a href="/">Узнать больше </a>
-                </div>
-    
-                <div class="d__item">
-                    <figure></figure>
-                    <h3>Заголовок услуги</h3>
-                    <ul>
-    
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-    
-                    </ul>
-    
-                    <a href="/">Узнать больше </a>
-                </div>
-    
-                <div class="d__item">
-                    <figure></figure>
-                    <h3>Заголовок услуги</h3>
-                    <ul>
-    
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-    
-                    </ul>
-    
-                    <a href="/">Узнать больше </a>
-                </div>
-    
-                <div class="d__item">
-                    <figure></figure>
-                    <h3>Заголовок услуги</h3>
-                    <ul>
-    
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-    
-                    </ul>
-    
-                    <a href="/">Узнать больше </a>
-                </div>
-    
-            </article>
-    
-            <button class="d__btn">Все услуги</button>
-    
-        </div>
-    
-    </section>
-    <section class="e">
-    
-        <div class="e__wrapper">
-            <article class="e__block">
-                <article class="e__items">
-                    <figure></figure>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
                 </article>
+                <article class="card">
+                    <figure></figure>
+                
+                    <h3>Заголовок услуги</h3>
+                
+                    <ul>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                    </ul>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure></figure>
+                
+                    <h3>Заголовок услуги</h3>
+                
+                    <ul>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                    </ul>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure></figure>
+                
+                    <h3>Заголовок услуги</h3>
+                
+                    <ul>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                    </ul>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure></figure>
+                
+                    <h3>Заголовок услуги</h3>
+                
+                    <ul>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                    </ul>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure></figure>
+                
+                    <h3>Заголовок услуги</h3>
+                
+                    <ul>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                    </ul>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure></figure>
+                
+                    <h3>Заголовок услуги</h3>
+                
+                    <ul>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                    </ul>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure></figure>
+                
+                    <h3>Заголовок услуги</h3>
+                
+                    <ul>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                        <li>Краткое описание услуги</li>
+                    </ul>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </article>
+            </section>
     
-                <article class="e__items">
-                    <h2>Юридические услуги <br />от профессионалов своего дела</h2>
-                    <p>Наша цель - сделать жизнь наших клиентов комфортнее, <br /> а самое главное безопаснее.</p>
+            <button class="services__button">Все услуги</button>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__wrapper">
+            <div class="about__item">
+                <figure></figure>
+            </div>
     
-                    <article class="e__count">
+            <section class="count">
+                <h2>Юридические услуги <br />от профессионалов своего дела</h2>
+                <p>Наша цель - сделать жизнь наших клиентов комфортнее, <br /> а самое главное безопаснее.</p>
+            
+                <article class="count__items">
+            
+                    <div class="count__item">
                         <span>
-                            <p>10</p>
+                            <p id='about-a'>0</p>
                             <p>лет практики</p>
                         </span>
-    
+            
                         <span>
-                            <p>980</p>
-                            <p>выиграных дел</p>
-                        </span>
-    
-                        <span>
-                            <p>1020</p>
+                            <p id='about-b'>0</p>
                             <p>довольных клиентов</p>
                         </span>
-    
+                    </div>
+            
+                    <div class="count__item">
                         <span>
-                            <p>1200</p>
+                            <p id='about-c'>0</p>
+                            <p>выиграных дел</p>
+                        </span>
+            
+                        <span>
+                            <p id='about-d'>0</p>
                             <p>заседаний суда </p>
                         </span>
-                    </article>
-    
-    
-    
+                    </div>
+            
                 </article>
+            
+            </section>
+        </div>
+    </section>
+    <section class="team">
+        <div class="team__wrapper">
+            <p>Наша команда</p>
+            <h2>Профессионалы нашей компании</h2>
+    
+            <article class="team__grid">
+                <section class="team_card">
+                    <figure></figure>
+                
+                    <h3>Инициалы</h3>
+                
+                    <p>Стаж: более 15 лет</p>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </section>
+                <section class="team_card">
+                    <figure></figure>
+                
+                    <h3>Инициалы</h3>
+                
+                    <p>Стаж: более 15 лет</p>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </section>
+                <section class="team_card">
+                    <figure></figure>
+                
+                    <h3>Инициалы</h3>
+                
+                    <p>Стаж: более 15 лет</p>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </section>
+                <section class="team_card">
+                    <figure></figure>
+                
+                    <h3>Инициалы</h3>
+                
+                    <p>Стаж: более 15 лет</p>
+                
+                    <article>
+                        <a href="/">Узнать больше</a>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </article>
+                </section>
             </article>
     
-    
-    
-            <article class="e__bio">
-                <p>Наша команда</p>
-                <h2>Профессионалы нашей компании</h2>
-    
-            </article>
-    
-            <article class="e__grid">
-    
-                <div class="e__item">
-                    <figure></figure>
-                    <h3>Инициалы</h3>
-                    <p>Стаж: более 15 лет</p>
-    
-                    <a href="">Подробнее </a>
-                </div>
-    
-    
-                <div class="e__item">
-                    <figure></figure>
-                    <h3>Инициалы</h3>
-                    <p>Стаж: более 15 лет</p>
-    
-                    <a href="">Подробнее </a>
-                </div>
-    
-                <div class="e__item">
-                    <figure></figure>
-                    <h3>Инициалы</h3>
-                    <p>Стаж: более 15 лет</p>
-    
-                    <a href="">Подробнее </a>
-                </div>
-    
-                <div class="e__item">
-                    <figure></figure>
-                    <h3>Инициалы</h3>
-                    <p>Стаж: более 15 лет</p>
-    
-                    <a href="">Подробнее </a>
-                </div>
-    
-            </article>
-    
-            <button class="e__btn">Вся команда</button>
-    
+            <button>Вся команда</button>
         </div>
     
     
     </section>
-    <section class="f">
-        <div class="f__wrapper">
-            <p>Наши рекомендации</p>
-            <h2>Отзывы наших клиентов</h2>
+    <section class="slider">
+        <p>Наши рекомендации</p>
+        <h2>Отзывы наших клиентов</h2>
     
-            <section class="f__slider">
-                <button></button>
+        <div class="slider__wrapper">
+            <svg id="slide_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="84" height="84">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="#4342e5" />
+            </svg>
     
-                <div class="f__feedback">
-                    <figure></figure>
-                    <h3>Катерина Наумова</h3>
-                    <p>Компания </p>
-                    <p>От лица компании «НСГ ГРУПП»
-                        и от себя лично выражаем благодарность
-                        Цыганковой Л.В и ее юридическому бюро
-                        за грамотную и своевременно проведенную
-                        работу, в связи с нашим обращением
-                        по предоставлению юридических услуг
-                        в г.Калуга
-                    </p>
-                </div>
-    
-                <div class="f__feedback">
-                    <figure></figure>
-                    <h3>Катерина Наумова</h3>
-                    <p>Компания </p>
-                    <p>От лица компании «НСГ ГРУПП»
-                        и от себя лично выражаем благодарность
-                        Цыганковой Л.В и ее юридическому бюро
-                        за грамотную и своевременно проведенную
-                        работу, в связи с нашим обращением
-                        по предоставлению юридических услуг
-                        в г.Калуга</p>
-                </div>
-                <button></button>
-            </section>
-    
-            <p>Публикации</p>
-            <h2>Новости нашей кампании</h2>
-    
-            <section class="f__news">
-    
-                <div class="f__item">
-                    <figure></figure>
-                    <article class="f__text">
-                        <p>01/07/2021</p>
-                        <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
-                        <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
-                            Определен
-                            новый
-                            порядок учета налогоплательщиков.</p>
-                        <a href="/">Подробнее</a>
+            <div class="slider__feed">
+                <section class="feedback">
+                    <article class="item">
+                        <figure></figure>
+                        <h3>Катерина Наумова</h3>
+                
+                        <p>Компания </p>
+                
+                        <p>От лица компании «НСГ ГРУПП»
+                            и от себя лично выражаем благодарность
+                            Цыганковой Л.В и ее юридическому бюро
+                            за грамотную и своевременно проведенную
+                            работу, в связи с нашим обращением
+                            по предоставлению юридических услуг
+                            в г.Калуга
+                        </p>
                     </article>
-                </div>
-    
-                <div class="f__item">
-    
-                    <article class="f__text">
-                        <p>01/07/2021</p>
-                        <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
-                        <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
-                            Определен
-                            новый
-                            порядок учета налогоплательщиков.</p>
-                        <a href="/">Подробнее</a>
+                
+                    <article class="item">
+                        <figure></figure>
+                
+                        <h3>Катерина Александровна</h3>
+                
+                        <p>Компания </p>
+                
+                        <p>От лица компании «НСГ ГРУПП»
+                            и от себя лично выражаем благодарность
+                            Цыганковой Л.В и ее юридическому бюро
+                            за грамотную и своевременно проведенную
+                            работу, в связи с нашим обращением
+                            по предоставлению юридических услуг
+                            в г.Калуга
+                        </p>
                     </article>
-    
-                    <article class="f__text">
-                        <p>01/07/2021</p>
-                        <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
-                        <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
-                            Определен
-                            новый
-                            порядок учета налогоплательщиков.</p>
-                        <a href="/">Подробнее</a>
+                
+                    <article class="item">
+                        <figure></figure>
+                
+                        <h3>Катерина Викторовна</h3>
+                
+                        <p>Компания </p>
+                
+                        <p>От лица компании «НСГ ГРУПП»
+                            и от себя лично выражаем благодарность
+                            Цыганковой Л.В и ее юридическому бюро
+                            за грамотную и своевременно проведенную
+                            работу, в связи с нашим обращением
+                            по предоставлению юридических услуг
+                            в г.Калуга
+                        </p>
                     </article>
-    
-                    <article class="f__text">
-                        <p>01/07/2021</p>
-                        <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
-                        <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
-                            Определен
-                            новый
-                            порядок учета налогоплательщиков.</p>
-                        <a href="/">Подробнее</a>
+                
+                    <article class="item">
+                        <figure></figure>
+                
+                        <h3>Катерина Валентиновна</h3>
+                
+                        <p>Компания </p>
+                
+                        <p>От лица компании «НСГ ГРУПП»
+                            и от себя лично выражаем благодарность
+                            Цыганковой Л.В и ее юридическому бюро
+                            за грамотную и своевременно проведенную
+                            работу, в связи с нашим обращением
+                            по предоставлению юридических услуг
+                            в г.Калуга
+                        </p>
                     </article>
+                </section>
+            </div>
     
-                </div>
+            <svg id="slide_right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="84" height="84">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="#4342e5" />
+            </svg>
+        </div>
+    </section>
+    <section class="news">
+        <p>Публикации</p>
+        <h2>Новости нашей кампании</h2>
     
-            </section>
+        <div class="news__wrapper">
+            <article class="news__item">
+                <figure></figure>
+                <section class="new">
+                    <p>01/07/2021</p>
+                    <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
+                    <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
+                        Определен
+                        новый
+                        порядок учета налогоплательщиков.</p>
+                    <span>
+                        <a href="/">Подробнее</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </span>
+                </section>
+    
+            </article>
+    
+            <article class="news__item">
+                <section class="new">
+                    <p>01/07/2021</p>
+                    <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
+                    <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
+                        Определен
+                        новый
+                        порядок учета налогоплательщиков.</p>
+                    <span>
+                        <a href="/">Подробнее</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </span>
+                </section>
+                <section class="new">
+                    <p>01/07/2021</p>
+                    <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
+                    <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
+                        Определен
+                        новый
+                        порядок учета налогоплательщиков.</p>
+                    <span>
+                        <a href="/">Подробнее</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </span>
+                </section>
+                <section class="new">
+                    <p>01/07/2021</p>
+                    <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
+                    <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
+                        Определен
+                        новый
+                        порядок учета налогоплательщиков.</p>
+                    <span>
+                        <a href="/">Подробнее</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                        </svg>
+                    </span>
+                </section>
+            </article>
         </div>
     
     </section>
-    <section class="g">
-    
-        <div class="g__wrapper">
-    
-            <div class="g__item">
-    
-                <article class="g__info">
+    <section class="consult">
+        <div class="consult__wrapper">
+            <div class="consult__items">
+                <article class="consult__info">
                     <h2>Задайте вопрос юристу</h2>
                     <p>Оставайтесь на связи</p>
                     <hr />
+    
                     <span>
                         <h3>Главный офис:</h3>
                         <p>400000, г.Волгоград, ул.Советская, д. 1, стр. 1</p>
@@ -486,39 +634,47 @@
                     </span>
                 </article>
     
-                <div class="g__form">
-                    <form action="">
-    
+                <div id="form" class="form">
+                    <form id="form" method="POST">
+                
                         <h2>Записаться на консультацию</h2>
                         <p>Мы перезвоним Вам в течении 20 минут</p>
-    
-                        <input type="text" placeholder="Имя">
-                        <input type="tel" placeholder="Телефон">
-                        <input type=" email" placeholder="Эл.почта">
-    
-                        <textarea cols="10" rows="5" placeholder="Коментарий"></textarea>
-    
+                
+                        <input class="_name _req" name="name" type="text" placeholder="Имя">
+                        <input class="_tel _req" name="tele" type="text" placeholder="Тел: 8 (800) 999 99 99">
+                        <input class="_mail _req" name="mail" type=" email" placeholder="Эл.почта">
+                        <textarea class="_area _req" name="area" cols="10" rows="5" placeholder="Коментарий"></textarea>
                         <span>
-                            <input type="radio" name="check" id="check">
-                            <label for="check">Я согласен с <a href="/">условиями оферты</a></label>
+                            <input class="_check _req" type="radio" name="check" id="check">
+                            <p>Я согласен с <a href="/">условиями оферты</a></p>
                         </span>
-    
-                        <button>Отправить</button>
+                        <button id="send" value="submit">Отправить</button>
+                
                     </form>
                 </div>
-    
             </div>
     
             <nav>
-                <figure>МФЦ АУДИТ</figure>
-    
-                <a ref="/">О компании</a>
-                <a ref="/">Наши услуги</a>
-                <a ref="/">Преимущества</a>
-                <a ref="/">Документы</a>
-                <a ref="/">Контакты</a>
-    
-                <button>Консультация</button>
+                <section class="nav">
+                    <figure class="nav__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 362.4" fill="#fff">
+                            <path
+                                d="M240.4 362.4c-100 0-181.4-81.3-181.4-181.2C59 81.3 140.4 0 240.4 0s181.4 81.3 181.4 181.2-81.4 181.2-181.4 181.2zm0-350.4C147 12 71 87.9 71 181.2c0 93.3 76 169.2 169.4 169.2s169.4-75.9 169.4-169.2S333.8 12 240.4 12z" />
+                            <path d="M0 256.3s77-56 240-56 240 56 240 56-78-75-240-75-240 75-240 75z" />
+                            <path
+                                d="M146 262.3h69v-9h-28c-2.9-2.9 0-8.1 0-8.1l46-123.9 49.8 124s3.2 5 .2 8h-25v9h76v-9h-8s-5.5.1-9-2c-2.6-1.7-4.7-4.2-6-7l-65-163h-13l-64 163s-2.3 4.6-5 7c-2.3 2.1-10 2-10 2h-8v9z" />
+                        </svg>
+                        <p>МФЦ АУДИТ</p>
+                    </figure>
+                
+                    <a id="scroll-a">О компании</a>
+                    <a>Наши услуги</a>
+                    <a>Преимущества</a>
+                    <a>Документы</a>
+                    <a>Контакты</a>
+                
+                    <button class="button_consult">Консультация</button>
+                </section>
             </nav>
         </div>
     </section>
@@ -526,17 +682,17 @@
 
   <!-- footer -->
   <footer>
-    <footer class="h">
-        <article class="h__item">
+    <footer class="footer">
+    
+        <article class="footer__item">
             <a href="">Политика конфиденциальности</a>
         </article>
-    
     
     </footer>
   </footer>
 
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" type="module"></script>
 </body>
 
 </html>

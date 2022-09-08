@@ -1,0 +1,42 @@
+.card {
+  background: var(--scheme-v1);
+  box-shadow: -10px 10px 15px var(--scheme-v6);
+
+  figure {
+    background: var(--scheme-v2);
+    height: 250px;
+    width: 100%;
+  }
+
+  h3 {
+    margin: var(--scheme-gap);
+    text-align: left;
+  }
+
+  li {
+    align-items: center;
+    color: var(--scheme-v4);
+    display: flex;
+    margin-left: 1.4rem;
+
+    &::before {
+      color: var(--scheme-v3);
+      content: "\0030FB";
+      font-size: 1.5rem;
+    }
+  }
+
+  article {
+    align-items: center;
+    display: flex;
+
+    a {
+      color: var(--scheme-v3);
+      margin: var(--scheme-gap);
+    }
+
+    svg {
+      fill: #4342e5;
+    }
+  }
+}

@@ -1,14 +1,14 @@
-.h {
+.footer {
   background: var(--scheme-v2);
-  padding: 40px;
   border-top: 1px solid var(--scheme-v4);
+  padding: var(--scheme-padding-container);
 
   &__item {
-    max-width: 1400px;
     margin: 0 auto;
-  }
+    max-width: var(--scheme-max-width-wrapper);
 
-  a {
-    color: var(--scheme-v4);
+    a {
+      color: var(--scheme-v4);
+    }
   }
 }

@@ -1,0 +1,43 @@
+.services {
+  background: var(--scheme-v5);
+  padding: var(--scheme-padding-container);
+  text-align: center;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: var(--scheme-max-width-wrapper);
+  }
+
+  p {
+    color: var(--scheme-v3);
+  }
+
+  h2 {
+    margin: var(--scheme-gap) 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: var(--scheme-gap);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin: calc(var(--scheme-gap) * 2) auto;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    border: 2px solid var(--scheme-v3);
+    color: var(--scheme-v3);
+
+    &:first-child {
+      border-right: 0;
+    }
+
+    &:hover {
+      color: var(--scheme-v1);
+    }
+  }
+}

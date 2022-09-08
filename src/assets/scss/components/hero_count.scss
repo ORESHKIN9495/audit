@@ -1,0 +1,19 @@
+.counts_hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  article {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 30px;
+
+      &:last-child {
+        color: var(--scheme-v4);
+        font-size: 16px;
+      }
+    }
+  }
+}

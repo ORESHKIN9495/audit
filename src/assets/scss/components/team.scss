@@ -1,0 +1,30 @@
+.team {
+  padding: var(--scheme-padding-container);
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: var(--scheme-max-width-wrapper);
+    text-align: center;
+  }
+
+  p {
+    color: var(--scheme-v3);
+  }
+
+  &__grid {
+    display: grid;
+    grid-gap: var(--scheme-gap);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin: calc(var(--scheme-gap) * 2) auto;
+    width: 100%;
+  }
+
+  button {
+    border: 2px solid var(--scheme-v3);
+    color: var(--scheme-v3);
+
+    &:hover {
+      color: var(--scheme-v1);
+    }
+  }
+}

@@ -5,7 +5,10 @@
   --scheme-v4: #666666;
   --scheme-v5: #f9f9f9;
   --scheme-v6: #a1a1a14a;
-  --scheme-gap: 20px;
+  --scheme-gap: 2rem;
+
+  --scheme-max-width-wrapper: 1400px;
+  --scheme-padding-container: 2rem;
 }
 
 // @font-face {
@@ -19,8 +22,6 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  max-width: 1920px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.6;
 }

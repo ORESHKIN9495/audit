@@ -1,0 +1,28 @@
+.news {
+  padding: var(--scheme-padding-container);
+  text-align: center;
+
+  p {
+    color: var(--scheme-v3);
+    margin: 0 0 var(--scheme-gap) 0;
+  }
+
+  h2 {
+    margin: 0 0 calc(var(--scheme-gap) * 4) 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--scheme-max-width-wrapper);
+  }
+
+  figure {
+    background: var(--scheme-v2);
+    height: 400px;
+    margin-bottom: var(--scheme-gap);
+    max-width: 650px;
+  }
+}
