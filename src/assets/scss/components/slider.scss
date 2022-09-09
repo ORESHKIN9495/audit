@@ -23,10 +23,27 @@
     max-width: 1600px;
     width: 100%;
 
+    span {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      padding: 50px;
+      width: 50px;
+    }
+
     svg {
       cursor: pointer;
       min-width: 84px;
       z-index: 999;
+      display: none;
+
+      &.sliderL {
+        display: block;
+      }
+      &.sliderR {
+        display: block;
+      }
     }
   }
 
@@ -41,7 +58,7 @@
   .slider {
     padding: 0;
 
-    svg {
+    span {
       display: none;
     }
 
