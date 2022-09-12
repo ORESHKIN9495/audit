@@ -1,12 +1,8 @@
 .services {
   background: var(--scheme-v5);
-  padding: var(--scheme-padding-container);
+  padding: calc(var(--scheme-padding-container) * 2)
+    var(--scheme-padding-container);
   text-align: center;
-
-  &__wrapper {
-    margin: 0 auto;
-    max-width: var(--scheme-max-width-wrapper);
-  }
 
   p {
     color: var(--scheme-v3);
@@ -21,6 +17,7 @@
     grid-gap: var(--scheme-gap);
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     margin: calc(var(--scheme-gap) * 2) auto;
+    max-width: var(--scheme-max-width-wrapper);
   }
 
   &__buttons {

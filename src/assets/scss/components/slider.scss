@@ -1,15 +1,12 @@
 .slider {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   max-width: 1900px;
   margin: 0 auto;
-  padding: var(--scheme-padding-container);
+  padding: calc(var(--scheme-padding-container) * 2)
+    var(--scheme-padding-container);
   text-align: center;
 
   p {
     color: var(--scheme-v3);
-    margin: 0 0 var(--scheme-gap) 0;
   }
 
   h2 {
@@ -21,7 +18,6 @@
     display: flex;
     margin: 0 auto;
     max-width: 1600px;
-    width: 100%;
 
     span {
       align-items: center;
@@ -48,9 +44,8 @@
   }
 
   &__feed {
-    margin: calc(var(--scheme-gap) * 2) auto;
     overflow: hidden;
-    padding-bottom: 2rem;
+    padding: calc(var(--scheme-padding-container) * 2) 0;
   }
 }
 

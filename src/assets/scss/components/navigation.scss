@@ -1,11 +1,20 @@
 .nav {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
 
-  a {
+  ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+      margin: 0;
+    }
+  }
+
+  li {
     cursor: pointer;
-    margin: 2rem 2rem 2rem 0;
+    margin: 20px 20px 20px 0;
     position: relative;
 
     &::after {
@@ -13,7 +22,7 @@
       display: block;
       padding: 1px;
       position: absolute;
-      transition: 0.3s ease-in-out;
+      transition: 0.1s ease-in-out;
       width: 100%;
     }
     &:hover {
@@ -26,18 +35,11 @@
   &__item {
     align-items: center;
     display: flex;
-    margin: 0 auto 0 0;
+    margin-right: auto;
 
     svg {
-      fill: #fff;
+      fill: var(--scheme-v1);
       width: 80px;
     }
-
-    p {
-      margin: 0 2rem 0 0;
-    }
-  }
-  button {
-    margin: 0;
   }
 }

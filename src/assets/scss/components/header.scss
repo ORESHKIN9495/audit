@@ -1,5 +1,5 @@
 .header {
-  background: var(--scheme-v2);
+  background: var(--scheme-v7);
   border-bottom: 1px solid var(--scheme-v4);
   padding: var(--scheme-padding-container);
 
@@ -8,13 +8,14 @@
     justify-content: space-between;
     margin: 0 auto;
     max-width: var(--scheme-max-width-wrapper);
+    position: relative;
   }
 
   &__item {
     align-items: center;
     display: flex;
 
-    img {
+    svg {
       margin-right: 0.5rem;
       width: 1.5rem;
     }

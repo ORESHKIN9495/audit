@@ -1,5 +1,10 @@
 .count {
+  justify-self: flex-end;
   padding: var(--scheme-padding-container);
+
+  @media only screen and(max-width:920px) {
+    justify-self: unset;
+  }
 
   p {
     color: var(--scheme-v4);

@@ -1,34 +1,35 @@
 .city {
   display: none;
-  height: 100vh;
   left: 0;
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 60px;
   z-index: 99;
 
-  &__wrapper {
-    display: flex;
-    margin: 65px auto;
-    max-width: var(--scheme-max-width-wrapper);
-  }
-
-  &__item {
+  ul {
+    display: grid;
     background: var(--scheme-v1);
     border-radius: 5px;
   }
 
-  &__items {
+  li {
     align-items: center;
     border-bottom: 1px solid var(--scheme-v5);
     color: var(--scheme-v4);
     display: flex;
-    padding: 20px 40px;
-    transition: 0.2s linear;
+    padding: 20px 32px;
+    transition: 0.1s ease-in-out;
 
     &:hover {
       color: var(--scheme-v1);
       background: var(--scheme-v3);
+
+      &:first-child {
+        border-radius: 4px 4px 0px 0px;
+      }
+
+      &:last-child {
+        border-radius: 0px 0px 4px 4px;
+      }
     }
 
     &:last-child {

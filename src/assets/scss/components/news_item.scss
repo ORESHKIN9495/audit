@@ -1,5 +1,4 @@
 .new {
-  max-width: 650px;
   text-align: left;
 
   p {
@@ -15,10 +14,6 @@
     a {
       color: var(--scheme-v3);
       margin-right: var(--scheme-gap);
-    }
-
-    svg {
-      fill: var(--scheme-v3);
     }
   }
 }

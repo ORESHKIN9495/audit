@@ -30,28 +30,31 @@
     	<div class="header__wrapper">
     
     		<div class="header__item">
-    			<img src="../assets/img/icon/map.svg" alt="/">
+    			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="40">
+    				<path d="M18.364 17.364 12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+    					fill="#666" />
+    			</svg>
     			<button id="popup"></button>
     
     
     
-    			<section id="city-popup" class="city">
-    			
-    			    <div id="city-popup1" class="city__wrapper">
-    			        <div class="city__item">
-    			            <a class="city__items">Волгоград</a>
-    			            <a class="city__items">Волжский</a>
-    			            <a class="city__items">Москва</a>
-    			            <a class="city__items">Санкт-перебург</a>
-    			        </div>
-    			    </div>
-    			
-    			</section>
+    			<nav id="city-popup" class="city">
+    			    <ul>
+    			        <li class="city__items">Волгоград</li>
+    			        <li class="city__items">Волжский</li>
+    			        <li class="city__items">Москва</li>
+    			        <li class="city__items">Санкт-перебург</li>
+    			    </ul>
+    			</nav>
     
     		</div>
     
     		<div class="header__item">
-    			<img src="../assets/img/icon/phone.svg" alt="/">
+    			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+    				<path
+    					d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z"
+    					fill="#666" />
+    			</svg>
     			<a href="tel: 8 800 999 99 99">8 800 999 99 99</a>
     		</div>
     
@@ -63,10 +66,9 @@
   <!-- main -->
   <main>
     <section class="hero">
-    
         <div class="hero__wrapper">
-            <section class="nav">
-                <figure class="nav__item">
+            <nav class="nav">
+                <article class="nav__item">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 362.4" fill="#fff">
                         <path
                             d="M240.4 362.4c-100 0-181.4-81.3-181.4-181.2C59 81.3 140.4 0 240.4 0s181.4 81.3 181.4 181.2-81.4 181.2-181.4 181.2zm0-350.4C147 12 71 87.9 71 181.2c0 93.3 76 169.2 169.4 169.2s169.4-75.9 169.4-169.2S333.8 12 240.4 12z" />
@@ -74,17 +76,18 @@
                         <path
                             d="M146 262.3h69v-9h-28c-2.9-2.9 0-8.1 0-8.1l46-123.9 49.8 124s3.2 5 .2 8h-25v9h76v-9h-8s-5.5.1-9-2c-2.6-1.7-4.7-4.2-6-7l-65-163h-13l-64 163s-2.3 4.6-5 7c-2.3 2.1-10 2-10 2h-8v9z" />
                     </svg>
-                    <p>МФЦ АУДИТ</p>
-                </figure>
+                    <p style=" margin-left: 20px">МФЦ АУДИТ</p>
+                </article>
             
-                <a id="scroll-a">О компании</a>
-                <a>Наши услуги</a>
-                <a>Преимущества</a>
-                <a>Документы</a>
-                <a>Контакты</a>
-            
-                <button class="button_consult">Консультация</button>
-            </section>
+                <ul>
+                    <li id="scroll-a"><a href="../about.html">О компании</a></li>
+                    <li>Наши услуги</li>
+                    <li>Преимущества</li>
+                    <li>Документы</li>
+                    <li>Контакты</li>
+                    <button class="button_consult">Консультация</button>
+                </ul>
+            </nav>
     
             <article class="hero__title">
                 <p>Предприятие</p>
@@ -99,245 +102,235 @@
     
                     <button>О компании</button>
                 </span>
-    
             </article>
     
-            <section class="counts_hero">
-                <article>
+            <article class="counts_hero">
+                <span>
                     <p id="count-a">0</p>
                     <p>ежедневных косультаций</p>
-                </article>
+                </span>
             
-                <article>
+                <span>
                     <p id="count-b">0</p>
                     <p>обслуживаемых городов</p>
-                </article>
+                </span>
             
-                <article>
+                <span>
                     <p id="count-c">0%</p>
                     <p>выиграных дел</p>
-                </article>
-            </section>
+                </span>
+            </article>
         </div>
-    
     </section>
     <section class="offer">
-    
         <div class="offer__wrapper">
-    
             <article class="offer__title">
-    
                 <p>Категория услуги</p>
     
-                <h2>Заголовок предложения </h2>
+                <h2>Заголовок предложения
     
-                <p>Более подробно прописан порядок постановки на учет организаций,
-                    а также граждан (на основании факта регистрации по месту жительства
-                    или пребывания. <br /><br />
-                    По данным о первичной выдаче паспорта гражданина или о замене
-                    документа, об установлении опеки (попечительства) и об управлении
-                    их имуществом и т. д.). Включены нормы о постановке на учет патентных
-                    поверенных, оценщиков и медиаторов.
-                    Были внесены изменения по вопросам постановки на учет
-                    граждан, организаций и ИП. В связи с этим Минфин определил новый
-                    порядок учета налогоплательщиков.
-                </p>
+                    <p>Более подробно прописан порядок постановки на учет организаций,
+                        а также граждан (на основании факта регистрации по месту жительства
+                        или пребывания. <br /><br />
+                        По данным о первичной выдаче паспорта гражданина или о замене
+                        документа, об установлении опеки (попечительства) и об управлении
+                        их имуществом и т. д.). Включены нормы о постановке на учет патентных
+                        поверенных, оценщиков и медиаторов.
+                        Были внесены изменения по вопросам постановки на учет
+                        граждан, организаций и ИП. В связи с этим Минфин определил новый
+                        порядок учета налогоплательщиков.
+                    </p>
+                </h2>
     
                 <button class="button_consult">Консультация</button>
-    
             </article>
     
-    
-            <div class="offer__item">
+            <article class="offer__item">
                 <figure></figure>
-            </div>
-    
+            </article>
         </div>
-    
     </section>
     <section class="services">
         <p>Чем мы занимаемся</p>
     
         <h2>Спектр наших услуг</h2>
     
-        <div class="services__wrapper">
-            <div class=" services__buttons">
-                <button>Услуги для граждан</button>
+        <div class=" services__buttons">
+            <button>Услуги для граждан</button>
     
-                <button>Услуги для бизнеса</button>
-            </div>
-    
-            <section class="services__items">
-                <article class="card">
-                    <figure></figure>
-                
-                    <h3>Заголовок услуги</h3>
-                
-                    <ul>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                    </ul>
-                
-                    <article>
-                        <a href="/">Узнать больше</a>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
-                        </svg>
-                    </article>
-                </article>
-                <article class="card">
-                    <figure></figure>
-                
-                    <h3>Заголовок услуги</h3>
-                
-                    <ul>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                    </ul>
-                
-                    <article>
-                        <a href="/">Узнать больше</a>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
-                        </svg>
-                    </article>
-                </article>
-                <article class="card">
-                    <figure></figure>
-                
-                    <h3>Заголовок услуги</h3>
-                
-                    <ul>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                    </ul>
-                
-                    <article>
-                        <a href="/">Узнать больше</a>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
-                        </svg>
-                    </article>
-                </article>
-                <article class="card">
-                    <figure></figure>
-                
-                    <h3>Заголовок услуги</h3>
-                
-                    <ul>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                    </ul>
-                
-                    <article>
-                        <a href="/">Узнать больше</a>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
-                        </svg>
-                    </article>
-                </article>
-                <article class="card">
-                    <figure></figure>
-                
-                    <h3>Заголовок услуги</h3>
-                
-                    <ul>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                    </ul>
-                
-                    <article>
-                        <a href="/">Узнать больше</a>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
-                        </svg>
-                    </article>
-                </article>
-                <article class="card">
-                    <figure></figure>
-                
-                    <h3>Заголовок услуги</h3>
-                
-                    <ul>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                    </ul>
-                
-                    <article>
-                        <a href="/">Узнать больше</a>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
-                        </svg>
-                    </article>
-                </article>
-                <article class="card">
-                    <figure></figure>
-                
-                    <h3>Заголовок услуги</h3>
-                
-                    <ul>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                    </ul>
-                
-                    <article>
-                        <a href="/">Узнать больше</a>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
-                        </svg>
-                    </article>
-                </article>
-                <article class="card">
-                    <figure></figure>
-                
-                    <h3>Заголовок услуги</h3>
-                
-                    <ul>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                        <li>Краткое описание услуги</li>
-                    </ul>
-                
-                    <article>
-                        <a href="/">Узнать больше</a>
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
-                            <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
-                        </svg>
-                    </article>
-                </article>
-            </section>
-    
-            <button class="services__button">Все услуги</button>
+            <button>Услуги для бизнеса</button>
         </div>
+    
+        <div class="services__items">
+            <article class="card">
+                <figure></figure>
+            
+                <h3>Заголовок услуги</h3>
+            
+                <ul>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                </ul>
+            
+                <span>
+                    <a href="/">Узнать больше</a>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
+                        <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                    </svg>
+                </span>
+            </article>
+            <article class="card">
+                <figure></figure>
+            
+                <h3>Заголовок услуги</h3>
+            
+                <ul>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                </ul>
+            
+                <span>
+                    <a href="/">Узнать больше</a>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
+                        <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                    </svg>
+                </span>
+            </article>
+            <article class="card">
+                <figure></figure>
+            
+                <h3>Заголовок услуги</h3>
+            
+                <ul>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                </ul>
+            
+                <span>
+                    <a href="/">Узнать больше</a>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
+                        <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                    </svg>
+                </span>
+            </article>
+            <article class="card">
+                <figure></figure>
+            
+                <h3>Заголовок услуги</h3>
+            
+                <ul>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                </ul>
+            
+                <span>
+                    <a href="/">Узнать больше</a>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
+                        <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                    </svg>
+                </span>
+            </article>
+            <article class="card">
+                <figure></figure>
+            
+                <h3>Заголовок услуги</h3>
+            
+                <ul>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                </ul>
+            
+                <span>
+                    <a href="/">Узнать больше</a>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
+                        <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                    </svg>
+                </span>
+            </article>
+            <article class="card">
+                <figure></figure>
+            
+                <h3>Заголовок услуги</h3>
+            
+                <ul>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                </ul>
+            
+                <span>
+                    <a href="/">Узнать больше</a>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
+                        <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                    </svg>
+                </span>
+            </article>
+            <article class="card">
+                <figure></figure>
+            
+                <h3>Заголовок услуги</h3>
+            
+                <ul>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                </ul>
+            
+                <span>
+                    <a href="/">Узнать больше</a>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
+                        <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                    </svg>
+                </span>
+            </article>
+            <article class="card">
+                <figure></figure>
+            
+                <h3>Заголовок услуги</h3>
+            
+                <ul>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                    <li>Краткое описание услуги</li>
+                </ul>
+            
+                <span>
+                    <a href="/">Узнать больше</a>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
+                        <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
+                    </svg>
+                </span>
+            </article>
+        </div>
+    
+        <button class="services__button">Все услуги</button>
     </section>
     <section class="about">
         <div class="about__wrapper">
-            <div class="about__item">
+            <article class="about__item">
                 <figure></figure>
-            </div>
+            </article>
     
             <section class="count">
                 <h2>Юридические услуги <br />от профессионалов своего дела</h2>
@@ -379,68 +372,68 @@
             <p>Наша команда</p>
             <h2>Профессионалы нашей компании</h2>
     
-            <article class="team__grid">
-                <section class="team_card">
+            <div class="team__grid">
+                <article class="team_card">
                     <figure></figure>
                 
-                    <h3>Инициалы</h3>
+                    <h3 style="margin: var(--scheme-gap) var(--scheme-gap) 0;">Инициалы</h3>
                 
                     <p>Стаж: более 15 лет</p>
                 
-                    <article>
+                    <span>
                         <a href="/">Узнать больше</a>
                 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
                             <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
                         </svg>
-                    </article>
-                </section>
-                <section class="team_card">
+                    </span>
+                </article>
+                <article class="team_card">
                     <figure></figure>
                 
-                    <h3>Инициалы</h3>
+                    <h3 style="margin: var(--scheme-gap) var(--scheme-gap) 0;">Инициалы</h3>
                 
                     <p>Стаж: более 15 лет</p>
                 
-                    <article>
+                    <span>
                         <a href="/">Узнать больше</a>
                 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
                             <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
                         </svg>
-                    </article>
-                </section>
-                <section class="team_card">
+                    </span>
+                </article>
+                <article class="team_card">
                     <figure></figure>
                 
-                    <h3>Инициалы</h3>
+                    <h3 style="margin: var(--scheme-gap) var(--scheme-gap) 0;">Инициалы</h3>
                 
                     <p>Стаж: более 15 лет</p>
                 
-                    <article>
+                    <span>
                         <a href="/">Узнать больше</a>
                 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
                             <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
                         </svg>
-                    </article>
-                </section>
-                <section class="team_card">
+                    </span>
+                </article>
+                <article class="team_card">
                     <figure></figure>
                 
-                    <h3>Инициалы</h3>
+                    <h3 style="margin: var(--scheme-gap) var(--scheme-gap) 0;">Инициалы</h3>
                 
                     <p>Стаж: более 15 лет</p>
                 
-                    <article>
+                    <span>
                         <a href="/">Узнать больше</a>
                 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
                             <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
                         </svg>
-                    </article>
-                </section>
-            </article>
+                    </span>
+                </article>
+            </div>
     
             <button>Вся команда</button>
         </div>
@@ -455,7 +448,7 @@
             <span>
                 <svg id="slide_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="84" height="84">
                     <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="#4342e5" />
+                    <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="var(--scheme-v3)" />
                 </svg>
             </span>
     
@@ -533,7 +526,7 @@
             <span>
                 <svg id="slide_right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="84" height="84">
                     <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="#4342e5" />
+                    <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="var(--scheme-v3)" />
                 </svg>
             </span>
         </div>
@@ -542,70 +535,90 @@
         <p>Публикации</p>
         <h2>Новости нашей кампании</h2>
     
-        <div class="news__wrapper">
-            <article class="news__item">
+        <div class="news__grid">
+            <div>
                 <figure></figure>
-                <section class="new">
+                <article class="new">
                     <p>01/07/2021</p>
+                
                     <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
+                
                     <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
                         Определен
                         новый
-                        порядок учета налогоплательщиков.</p>
+                        порядок учета налогоплательщиков.
+                    </p>
+                
                     <span>
                         <a href="/">Подробнее</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
                             <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
                         </svg>
                     </span>
-                </section>
+                </article>
     
-            </article>
+            </div>
     
-            <article class="news__item">
-                <section class="new">
+            <div>
+                <article class="new">
                     <p>01/07/2021</p>
+                
                     <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
+                
                     <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
                         Определен
                         новый
-                        порядок учета налогоплательщиков.</p>
+                        порядок учета налогоплательщиков.
+                    </p>
+                
                     <span>
                         <a href="/">Подробнее</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
                             <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
                         </svg>
                     </span>
-                </section>
-                <section class="new">
+                </article>
+                <article class="new">
                     <p>01/07/2021</p>
+                
                     <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
+                
                     <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
                         Определен
                         новый
-                        порядок учета налогоплательщиков.</p>
+                        порядок учета налогоплательщиков.
+                    </p>
+                
                     <span>
                         <a href="/">Подробнее</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
                             <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
                         </svg>
                     </span>
-                </section>
-                <section class="new">
+                </article>
+                <article class="new">
                     <p>01/07/2021</p>
+                
                     <h3>Конференция, посвященная 25-летию <br />консалтинга и аудита</h3>
+                
                     <p>В НК РФ были внесены изменения по вопросам постановки на учет граждан, организаций и ИП.
                         Определен
                         новый
-                        порядок учета налогоплательщиков.</p>
+                        порядок учета налогоплательщиков.
+                    </p>
+                
                     <span>
                         <a href="/">Подробнее</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50">
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="var(--scheme-v3)">
                             <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" />
                         </svg>
                     </span>
-                </section>
-            </article>
+                </article>
+            </div>
         </div>
     
     </section>
@@ -638,48 +651,54 @@
                     </span>
                 </article>
     
-                <div id="form" class="form">
-                    <form id="form" method="POST">
-                
-                        <h2>Записаться на консультацию</h2>
+                <article class="consult__form">
+                    <form id="form" method="POST" class="form">
+                        <h2 style="color:var(--scheme-v7)">Записаться на консультацию</h2>
+                    
                         <p>Мы перезвоним Вам в течении 20 минут</p>
-                
+                    
                         <input class="_name _req" name="name" type="text" placeholder="Имя">
+                    
                         <input class="_tel _req" name="tele" type="text" placeholder="Тел: 8 (800) 999 99 99">
+                    
                         <input class="_mail _req" name="mail" type=" email" placeholder="Эл.почта">
+                    
                         <textarea class="_area _req" name="area" cols="10" rows="5" placeholder="Коментарий"></textarea>
+                    
                         <span>
                             <input class="_check _req" type="radio" name="check" id="check">
                             <p>Я согласен с <a href="/">условиями оферты</a></p>
                         </span>
+                    
                         <button id="send" value="submit">Отправить</button>
-                
                     </form>
-                </div>
+                </article>
+    
             </div>
     
-            <nav>
-                <section class="nav">
-                    <figure class="nav__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 362.4" fill="#fff">
-                            <path
-                                d="M240.4 362.4c-100 0-181.4-81.3-181.4-181.2C59 81.3 140.4 0 240.4 0s181.4 81.3 181.4 181.2-81.4 181.2-181.4 181.2zm0-350.4C147 12 71 87.9 71 181.2c0 93.3 76 169.2 169.4 169.2s169.4-75.9 169.4-169.2S333.8 12 240.4 12z" />
-                            <path d="M0 256.3s77-56 240-56 240 56 240 56-78-75-240-75-240 75-240 75z" />
-                            <path
-                                d="M146 262.3h69v-9h-28c-2.9-2.9 0-8.1 0-8.1l46-123.9 49.8 124s3.2 5 .2 8h-25v9h76v-9h-8s-5.5.1-9-2c-2.6-1.7-4.7-4.2-6-7l-65-163h-13l-64 163s-2.3 4.6-5 7c-2.3 2.1-10 2-10 2h-8v9z" />
-                        </svg>
-                        <p>МФЦ АУДИТ</p>
-                    </figure>
-                
-                    <a id="scroll-a">О компании</a>
-                    <a>Наши услуги</a>
-                    <a>Преимущества</a>
-                    <a>Документы</a>
-                    <a>Контакты</a>
-                
+    
+            <nav class="nav">
+                <article class="nav__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 362.4" fill="#fff">
+                        <path
+                            d="M240.4 362.4c-100 0-181.4-81.3-181.4-181.2C59 81.3 140.4 0 240.4 0s181.4 81.3 181.4 181.2-81.4 181.2-181.4 181.2zm0-350.4C147 12 71 87.9 71 181.2c0 93.3 76 169.2 169.4 169.2s169.4-75.9 169.4-169.2S333.8 12 240.4 12z" />
+                        <path d="M0 256.3s77-56 240-56 240 56 240 56-78-75-240-75-240 75-240 75z" />
+                        <path
+                            d="M146 262.3h69v-9h-28c-2.9-2.9 0-8.1 0-8.1l46-123.9 49.8 124s3.2 5 .2 8h-25v9h76v-9h-8s-5.5.1-9-2c-2.6-1.7-4.7-4.2-6-7l-65-163h-13l-64 163s-2.3 4.6-5 7c-2.3 2.1-10 2-10 2h-8v9z" />
+                    </svg>
+                    <p style=" margin-left: 20px">МФЦ АУДИТ</p>
+                </article>
+            
+                <ul>
+                    <li id="scroll-a"><a href="../about.html">О компании</a></li>
+                    <li>Наши услуги</li>
+                    <li>Преимущества</li>
+                    <li>Документы</li>
+                    <li>Контакты</li>
                     <button class="button_consult">Консультация</button>
-                </section>
+                </ul>
             </nav>
+    
         </div>
     </section>
   </main>
@@ -687,11 +706,9 @@
   <!-- footer -->
   <footer>
     <footer class="footer">
-    
         <article class="footer__item">
-            <a href="">Политика конфиденциальности</a>
+            <a href="" style="color: var(--scheme-v4)">Политика конфиденциальности</a>
         </article>
-    
     </footer>
   </footer>
 

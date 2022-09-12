@@ -1,7 +1,8 @@
 .hero {
-  background: var(--scheme-v2);
+  background: var(--scheme-v7);
   color: var(--scheme-v1);
-  padding: var(--scheme-padding-container);
+  padding: calc(var(--scheme-padding-container) * 2)
+    var(--scheme-padding-container);
 
   &__wrapper {
     margin: 0 auto;

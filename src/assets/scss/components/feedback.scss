@@ -2,7 +2,6 @@
   display: flex;
   padding: 0 80px;
   position: relative;
-  transform: translateX(0);
   transition: transform 0.3s ease-out;
 
   article {
@@ -16,7 +15,7 @@
   }
 
   figure {
-    background: var(--scheme-v2);
+    background: var(--scheme-v7);
     border-radius: 100px;
     left: -80px;
     max-width: 70px;

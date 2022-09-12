@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  article {
-    display: flex;
-    flex-direction: column;
+  span {
+    display: grid;
+    gap: var(--scheme-gap);
 
     p {
       font-size: 30px;

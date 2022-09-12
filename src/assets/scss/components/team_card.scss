@@ -4,13 +4,8 @@
   text-align: left;
 
   figure {
-    background: var(--scheme-v2);
+    background: var(--scheme-v7);
     height: 250px;
-    width: 100%;
-  }
-
-  h3 {
-    margin: var(--scheme-gap) var(--scheme-gap) 0;
   }
 
   p {
@@ -18,17 +13,13 @@
     margin: 0 var(--scheme-gap);
   }
 
-  article {
+  span {
     align-items: center;
     display: flex;
 
     a {
       color: var(--scheme-v3);
       margin: var(--scheme-gap);
-    }
-
-    svg {
-      fill: var(--scheme-v3);
     }
   }
 }

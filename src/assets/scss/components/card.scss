@@ -3,9 +3,8 @@
   box-shadow: -10px 10px 15px var(--scheme-v6);
 
   figure {
-    background: var(--scheme-v2);
+    background: var(--scheme-v7);
     height: 250px;
-    width: 100%;
   }
 
   h3 {
@@ -26,17 +25,13 @@
     }
   }
 
-  article {
+  span {
     align-items: center;
     display: flex;
 
     a {
       color: var(--scheme-v3);
       margin: var(--scheme-gap);
-    }
-
-    svg {
-      fill: #4342e5;
     }
   }
 }

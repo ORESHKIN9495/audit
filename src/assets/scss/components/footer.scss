@@ -1,14 +1,10 @@
 .footer {
-  background: var(--scheme-v2);
+  background: var(--scheme-v7);
   border-top: 1px solid var(--scheme-v4);
   padding: var(--scheme-padding-container);
 
   &__item {
     margin: 0 auto;
     max-width: var(--scheme-max-width-wrapper);
-
-    a {
-      color: var(--scheme-v4);
-    }
   }
 }

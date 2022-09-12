@@ -8,26 +8,23 @@ window.onload = function getData() {
 };
 
 let popUp = document.getElementById("city-popup"),
-  popUp1 = document.getElementById("city-popup1"),
   buttonPopup = document.getElementById("popup"),
   citys = document.querySelectorAll(".city__items");
 
-buttonPopup.onclick = function () {
+buttonPopup.addEventListener("click", () => {
   popUp.style.display = "block";
-};
+});
 
 for (let key of citys) {
   const city = key;
 
-  city.onclick = function () {
+  city.addEventListener("click", (e) => {
     let item = city.innerText;
     buttonPopup.innerText = item;
     localStorage.setItem("город", item);
-  };
-}
 
-window.onclick = function (e) {
-  if (e.target == popUp || e.target == popUp1) {
-    popUp.style.display = "none";
-  }
-};
+    if (e.target == city) {
+      popUp.style.display = "none";
+    }
+  });
+}
