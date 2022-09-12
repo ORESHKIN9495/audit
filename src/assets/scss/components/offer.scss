@@ -29,6 +29,7 @@
     button {
       border: 2px solid var(--scheme-v3);
       color: var(--scheme-v3);
+      margin-top: calc(var(--scheme-gap) * 4);
 
       &:hover {
         color: var(--scheme-v1);
