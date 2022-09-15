@@ -32,18 +32,8 @@
   p {
     color: var(--scheme-v4);
   }
-}
 
-.grabbing {
-  cursor: grabbing;
-}
-
-.grabbing .item {
-  transform: scale(0.9);
-}
-
-@media only screen and(max-width:650px) {
-  .feedback {
+  @media only screen and(max-width:650px) {
     padding: 0;
 
     article {
@@ -59,4 +49,12 @@
       max-width: 320px;
     }
   }
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .item {
+  transform: scale(0.9);
 }

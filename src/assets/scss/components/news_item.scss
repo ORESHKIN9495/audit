@@ -37,6 +37,11 @@
 
   @media only screen and(max-width:920px) {
     grid-template-columns: 1fr;
+    text-align: center;
+
+    span {
+      justify-content: center;
+    }
 
     &:nth-child(1n) {
       grid-area: unset;

@@ -13,10 +13,6 @@
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    @media only screen and(max-width:920px) {
-      grid-template-columns: 1fr;
-    }
   }
 
   &__info {
@@ -43,5 +39,15 @@
     border: 2px solid var(--scheme-v3);
     margin-left: 50px;
     padding: 30px;
+  }
+
+  @media only screen and(max-width:920px) {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+
+    &__info {
+      text-align: center;
+    }
   }
 }

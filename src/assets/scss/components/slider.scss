@@ -48,10 +48,8 @@
     overflow: hidden;
     padding: calc(var(--scheme-padding-container) * 2) 0;
   }
-}
 
-@media only screen and(max-width:870px) {
-  .slider {
+  @media only screen and(max-width:870px) {
     padding: 0;
 
     span {

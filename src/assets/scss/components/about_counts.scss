@@ -1,11 +1,6 @@
 .count {
   justify-self: flex-end;
 
-  @media only screen and(max-width:920px) {
-    justify-self: unset;
-    margin-top: var(--scheme-gap);
-  }
-
   p {
     color: var(--scheme-v4);
     margin: var(--scheme-gap) 0;
@@ -26,5 +21,10 @@
       color: black;
       font-size: 42px;
     }
+  }
+
+  @media only screen and(max-width:920px) {
+    justify-self: unset;
+    margin-top: var(--scheme-gap);
   }
 }
