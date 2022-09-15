@@ -2,12 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: var(--scheme-gap);
+
+  @media only screen and(max-width: 411px) {
+    justify-content: center;
+  }
 
   span {
     display: grid;
     gap: var(--scheme-gap);
     text-align: center;
-    max-width: 100px;
 
     p {
       font-size: 30px;
