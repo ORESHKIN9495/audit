@@ -5,16 +5,23 @@
 
     <input class="_name _req" name="name" type="text" placeholder="Имя">
 
-    <input class="_tel _req" name="tele" type="text" placeholder="Тел: 8 (800) 999 99 99">
+    <input id="tel" class="_tel _req" name="tel" type="tel" maxlength="18" placeholder="Тел: 8 (800) 999 99 99"
+        onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false">
 
     <input class="_mail _req" name="mail" type=" email" placeholder="Эл.почта">
 
     <textarea class="_area _req" name="area" cols="10" rows="5" placeholder="Коментарий"></textarea>
 
-    <span>
-        <input class="_check _req" type="radio" name="check" id="check">
+
+    <article>
+        <span>
+            <input class="_req" type="checkbox" name="check" id="check">
+            <label for="check"></label>
+        </span>
+
         <p>Я согласен с <a href="/">условиями оферты</a></p>
-    </span>
+    </article>
+
 
     <button id="send" value="submit">Отправить</button>
 </form>

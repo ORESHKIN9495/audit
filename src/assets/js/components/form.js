@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
   form.addEventListener("submit", formSend);
 
-  let check = document.getElementById("check");
   async function formSend(e) {
     e.preventDefault();
 
@@ -32,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
           error++;
         }
       } else if (
-        input.getAttribute("type") === "radio" &&
+        input.getAttribute("type") === "checkbox" &&
         input.checked === false
       ) {
         formAddError(input);
@@ -48,9 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function formAddError(input) {
+    input.parentElement.classList.add("_error");
     input.classList.add("_error");
   }
   function formRemoveError(input) {
+    input.parentElement.classList.remove("_error");
     input.classList.remove("_error");
   }
 

@@ -26,7 +26,7 @@
 
   <!-- header -->
   <header>
-    <section id="head" class="header">
+    <section class="header">
     	<div class="header__wrapper">
     
     		<div class="header__item">
@@ -34,19 +34,7 @@
     				<path d="M18.364 17.364 12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
     					fill="#666" />
     			</svg>
-    			<button id="popup"></button>
-    
-    
-    
-    			<nav id="city-popup" class="city">
-    			    <ul>
-    			        <li class="city__items">Волгоград</li>
-    			        <li class="city__items">Волжский</li>
-    			        <li class="city__items">Москва</li>
-    			        <li class="city__items">Санкт-перебург</li>
-    			    </ul>
-    			</nav>
-    
+    			<button>Выберите город</button>
     		</div>
     
     		<div class="header__item">
@@ -597,12 +585,12 @@
     
                     <span>
                         <h3>Телефон</h3>
-                        <p>8 800 999 99 99</p>
+                        <a href="/">8 800 999 99 99</a>
                     </span>
     
                     <span>
                         <h3>Эл. почта</h3>
-                        <p>mftsaudit@mail.ru</p>
+                        <a href="/">mftsaudit@mail.ru</a>
                     </span>
     
                     <span>
@@ -619,46 +607,28 @@
                     
                         <input class="_name _req" name="name" type="text" placeholder="Имя">
                     
-                        <input class="_tel _req" name="tele" type="text" placeholder="Тел: 8 (800) 999 99 99">
+                        <input id="tel" class="_tel _req" name="tel" type="tel" maxlength="18" placeholder="Тел: 8 (800) 999 99 99"
+                            onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false">
                     
                         <input class="_mail _req" name="mail" type=" email" placeholder="Эл.почта">
                     
                         <textarea class="_area _req" name="area" cols="10" rows="5" placeholder="Коментарий"></textarea>
                     
-                        <span>
-                            <input class="_check _req" type="radio" name="check" id="check">
+                    
+                        <article>
+                            <span>
+                                <input class="_req" type="checkbox" name="check" id="check">
+                                <label for="check"></label>
+                            </span>
+                    
                             <p>Я согласен с <a href="/">условиями оферты</a></p>
-                        </span>
+                        </article>
+                    
                     
                         <button id="send" value="submit">Отправить</button>
                     </form>
                 </article>
-    
             </div>
-    
-    
-            <nav class="nav">
-                <article class="nav__item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 362.4" fill="#fff">
-                        <path
-                            d="M240.4 362.4c-100 0-181.4-81.3-181.4-181.2C59 81.3 140.4 0 240.4 0s181.4 81.3 181.4 181.2-81.4 181.2-181.4 181.2zm0-350.4C147 12 71 87.9 71 181.2c0 93.3 76 169.2 169.4 169.2s169.4-75.9 169.4-169.2S333.8 12 240.4 12z" />
-                        <path d="M0 256.3s77-56 240-56 240 56 240 56-78-75-240-75-240 75-240 75z" />
-                        <path
-                            d="M146 262.3h69v-9h-28c-2.9-2.9 0-8.1 0-8.1l46-123.9 49.8 124s3.2 5 .2 8h-25v9h76v-9h-8s-5.5.1-9-2c-2.6-1.7-4.7-4.2-6-7l-65-163h-13l-64 163s-2.3 4.6-5 7c-2.3 2.1-10 2-10 2h-8v9z" />
-                    </svg>
-                    <p style=" margin-left: 20px">МФЦ АУДИТ</p>
-                </article>
-            
-                <ul>
-                    <li id="scroll-a"><a href="../about.html">О компании</a></li>
-                    <li>Наши услуги</li>
-                    <li>Преимущества</li>
-                    <li>Документы</li>
-                    <li>Контакты</li>
-                    <button class="button_consult">Консультация</button>
-                </ul>
-            </nav>
-    
         </div>
     </section>
   </main>

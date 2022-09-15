@@ -4,7 +4,7 @@
   padding: var(--scheme-padding-container);
 
   &__wrapper {
-    margin: 0 auto;
+    margin: calc(var(--scheme-gap) * 2.5) auto;
     max-width: var(--scheme-max-width-wrapper);
   }
 

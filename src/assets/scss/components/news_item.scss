@@ -1,15 +1,18 @@
 .new {
+  margin-bottom: var(--scheme-gap);
   text-align: left;
 
   p {
     color: var(--scheme-v4);
-    margin: 0;
+  }
+
+  h3 {
+    margin: calc(var(--scheme-gap) / 2) 0;
   }
 
   span {
     align-items: center;
     display: flex;
-    margin-bottom: var(--scheme-gap);
 
     a {
       color: var(--scheme-v3);

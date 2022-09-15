@@ -10,7 +10,7 @@
   }
 
   &__title {
-    margin: calc(var(--scheme-gap) * 6) 0;
+    margin: calc(var(--scheme-gap) * 4) 0;
 
     p:first-child {
       color: var(--scheme-v4);
@@ -24,6 +24,6 @@
   }
 
   button {
-    margin: calc(var(--scheme-gap) * 4) 20px calc(var(--scheme-gap) * 4) 0;
+    margin: calc(var(--scheme-gap) * 3) 20px var(--scheme-gap) 0;
   }
 }

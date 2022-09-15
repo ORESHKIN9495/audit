@@ -8,13 +8,13 @@
   }
 
   h2 {
-    margin: 0 0 calc(var(--scheme-gap) * 4) 0;
+    margin: var(--scheme-gap) 0;
   }
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--scheme-gap);
+    gap: calc(var(--scheme-gap) * 2);
     margin: 0 auto;
     max-width: var(--scheme-max-width-wrapper);
 
@@ -26,6 +26,6 @@
   figure {
     background: var(--scheme-v7);
     height: 400px;
-    margin-bottom: var(--scheme-gap);
+    margin-bottom: calc(var(--scheme-gap) * 3.3);
   }
 }
