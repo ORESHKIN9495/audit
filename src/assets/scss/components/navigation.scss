@@ -1,11 +1,13 @@
 .nav {
   display: flex;
   flex-wrap: wrap;
+  gap: var(--scheme-gap);
 
   ul {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    gap: var(--scheme-gap);
 
     button {
       margin: 0;
@@ -14,7 +16,6 @@
 
   li {
     cursor: pointer;
-    margin: 20px 20px 20px 0;
     position: relative;
 
     &::after {

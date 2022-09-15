@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--scheme-gap);
-    margin: var(--scheme-gap) auto;
+    margin: 0 auto;
     max-width: var(--scheme-max-width-wrapper);
 
     @media only screen and(max-width:920px) {
