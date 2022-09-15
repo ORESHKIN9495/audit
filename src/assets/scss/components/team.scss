@@ -1,11 +1,15 @@
 .team {
-  padding: calc(var(--scheme-padding-container) * 2)
+  padding: calc(var(--scheme-padding-container) * 5)
     var(--scheme-padding-container);
 
   &__wrapper {
     margin: 0 auto;
     max-width: var(--scheme-max-width-wrapper);
     text-align: center;
+  }
+
+  h2 {
+    margin: var(--scheme-gap) 0 0;
   }
 
   p {
@@ -16,13 +20,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--scheme-gap);
-    margin: calc(var(--scheme-gap) * 2) auto;
+    margin: calc(var(--scheme-gap) * 2) auto 0;
   }
 
   button {
     border: 2px solid var(--scheme-v3);
     color: var(--scheme-v3);
-    margin: calc(var(--scheme-gap) * 2) 0;
+    margin: calc(var(--scheme-gap) * 2) 0 0;
 
     &:hover {
       color: var(--scheme-v1);

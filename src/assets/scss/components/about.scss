@@ -1,12 +1,12 @@
 .about {
-  padding: calc(var(--scheme-padding-container) * 2)
+  padding: calc(var(--scheme-padding-container) * 5)
     var(--scheme-padding-container);
 
   &__wrapper {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: var(--scheme-gap) auto;
+    margin: 0 auto;
     max-width: var(--scheme-max-width-wrapper);
 
     @media only screen and(max-width:920px) {

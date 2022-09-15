@@ -1,6 +1,5 @@
 .count {
   justify-self: flex-end;
-  padding: var(--scheme-padding-container);
 
   @media only screen and(max-width:920px) {
     justify-self: unset;
@@ -8,29 +7,23 @@
 
   p {
     color: var(--scheme-v4);
-    margin: 2rem 0;
+    margin: var(--scheme-gap) 0;
   }
 
   &__items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--scheme-gap);
   }
 
   &__item {
-    margin-right: 4rem;
+    p {
+      margin: 0;
+    }
 
-    span {
-      display: block;
-      margin: 1rem 0;
-
-      p {
-        margin: 0;
-      }
-
-      p:first-child {
-        color: black;
-        font-size: 30px;
-      }
+    p:first-child {
+      color: black;
+      font-size: 42px;
     }
   }
 }

@@ -1,10 +1,11 @@
 .consult {
   background: var(--scheme-v7);
   color: var(--scheme-v1);
-  padding: var(--scheme-padding-container);
+  padding: calc(var(--scheme-padding-container) * 5)
+    var(--scheme-padding-container);
 
   &__wrapper {
-    margin: calc(var(--scheme-gap) * 2.5) auto;
+    margin: 0 auto;
     max-width: var(--scheme-max-width-wrapper);
   }
 
@@ -12,7 +13,6 @@
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 20px;
 
     @media only screen and(max-width:920px) {
       grid-template-columns: 1fr;

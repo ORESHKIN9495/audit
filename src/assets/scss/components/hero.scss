@@ -1,7 +1,7 @@
 .hero {
   background: var(--scheme-v7);
   color: var(--scheme-v1);
-  padding: calc(var(--scheme-padding-container) * 2)
+  padding: calc(var(--scheme-padding-container) * 5)
     var(--scheme-padding-container);
 
   &__wrapper {

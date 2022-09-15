@@ -10,11 +10,10 @@
 
   span {
     display: grid;
-    gap: var(--scheme-gap);
     text-align: center;
 
     p {
-      font-size: 30px;
+      font-size: 42px;
 
       &:last-child {
         color: var(--scheme-v4);
