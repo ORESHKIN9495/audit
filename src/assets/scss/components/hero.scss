@@ -21,9 +21,12 @@
       margin: var(--scheme-gap) 0;
       word-break: break-all;
     }
-  }
 
-  button {
-    margin: calc(var(--scheme-gap) * 3) 20px var(--scheme-gap) 0;
+    span {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calc(var(--scheme-gap) / 1.5);
+      margin: calc(var(--scheme-gap) * 3) 20px var(--scheme-gap) 0;
+    }
   }
 }
