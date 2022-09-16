@@ -6,6 +6,7 @@
 
   article {
     box-shadow: -10px 10px 25px var(--scheme-v6);
+    display: grid;
     margin-right: 280px;
     min-width: 520px;
     padding: 80px;
@@ -18,7 +19,7 @@
     background: var(--scheme-v7);
     border-radius: 100px;
     left: -80px;
-    max-width: 70px;
+    height: 70px;
     padding: 70px;
     position: absolute;
     top: 40px;
@@ -33,11 +34,15 @@
     color: var(--scheme-v4);
   }
 
-  @media only screen and(max-width:650px) {
+  @media only screen and(max-width:428px) {
     padding: 0;
 
     article {
+      gap: var(--scheme-gap);
+      justify-items: center;
+      min-width: 400px;
       padding: 20px;
+      text-align: center;
     }
 
     figure {
@@ -47,6 +52,7 @@
 
     p {
       max-width: 320px;
+      text-align: center;
     }
   }
 }

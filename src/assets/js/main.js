@@ -13,3 +13,4 @@
 //= components/form.js
 //= components/slider.js
 //= components/form_mask.js
+//= components/menu.js

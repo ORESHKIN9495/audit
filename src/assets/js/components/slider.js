@@ -67,7 +67,7 @@ if (
   }
 
   function setPositionByIndex() {
-    currentTranslate = currentIndex * -800;
+    currentTranslate = currentIndex * -680;
     prevTranslate = currentTranslate;
     setSliderPosition();
   }

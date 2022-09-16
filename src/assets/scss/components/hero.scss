@@ -32,8 +32,18 @@
 
   @media only screen and(max-width:920px) {
     text-align: center;
+
     span {
       justify-content: center;
+    }
+  }
+
+  @media only screen and(max-width:428px) {
+    padding: calc(var(--scheme-padding-container) * 1)
+      var(--scheme-padding-container) calc(var(--scheme-padding-container) * 5);
+
+    &__title {
+      margin: var(--scheme-gap) 0;
     }
   }
 }

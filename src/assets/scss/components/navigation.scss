@@ -55,4 +55,16 @@
       justify-content: center;
     }
   }
+
+  @media only screen and(max-width:428px) {
+    &__item {
+      p {
+        display: none;
+      }
+    }
+
+    ul {
+      display: none;
+    }
+  }
 }
